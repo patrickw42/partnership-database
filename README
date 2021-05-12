@@ -1,0 +1,14 @@
+Apply bottom-up approach and develop a database to register all users. Then, help these users to form each 2-person group.
+
+The system needs to handle the following tasks:
+•	Run a JDBC main method to launch the entire system.
+•	Use the MySQL server to save the information.
+•	Load, display and update information via JDBC API. 
+•	All users’ username (distinct), name and password are prepared and saved in a local file and will be loaded to server at the same time the main method is launched. 
+•	Each user will have an initial status “unselected.”
+•	After an “unselected” user’s login, 
+o	he or she can view the names (neither username nor password directly) of all users in the system and choose UPTO 5 “unselected” users to “invite.” 
+o	he or she can view all users (by names, but neither username nor password) in the system who have “invited” him or herself.
+o	he can choose one and only one invitation from the above “invited” list. After this selection, both two users will change their status from “unselected” to “selected.” If the inviter has changed to “selected” status, this status flip is cancelled and retain the original “unselected” status. 
+•	A “selected” user immediately become invalid to view any name for sending and confirming the invitation (in the above step). But he or she can see his or her partner’s name.  
+•	Keep running the system with even number of users until all gather their partners. 
